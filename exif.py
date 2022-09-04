@@ -100,6 +100,7 @@ for file in files:
                 # If you print the tag without running it through the TAGS.get() method you'll get numerical values for every tag. We want the tags in human-readable form. 
                 # You can see the tags and the associated decimal number in the exif standard here: https://exiv2.org/tags.html
                 tag_name = TAGS.get(tag)
+                #gps
                 if tag_name == "GPSInfo":
                     for key, val in value.items():
                         # Print the GPS Data value for every key to the screen.
