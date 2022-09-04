@@ -103,7 +103,7 @@ for file in files:
                 #gps
                 if tag_name == "GPSInfo":
                     for key, val in value.items():
-                        # Print the GPS Data value for every key to the screen.
+                        
                         print(f"{GPSTAGS.get(key)} - {val}")
                         # We add Latitude data to the gps_coord dictionary which we initialized in line 110.
                         if GPSTAGS.get(key) == "GPSLatitude":
